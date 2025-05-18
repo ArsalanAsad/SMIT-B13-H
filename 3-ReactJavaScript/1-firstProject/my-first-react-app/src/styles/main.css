@@ -1,0 +1,9 @@
+h1 {
+  color: #2c3e50;
+}
+
+.greeting {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin: 2rem 0;
+}
