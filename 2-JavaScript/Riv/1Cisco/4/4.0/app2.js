@@ -110,35 +110,24 @@
 //     alert(">100")
 // }
 
-const INSURANCE_COST = 2.99;
+//4.0.5 Conditional operator..............................
+// let price = 100;
+// let shippingCost;
+// if (price > 50) {
+//     shippingCost = 0;
+// } else {
+//     shippingCost = 5;
+// }
+// console.log(`price = ${price}, shipping = ${shippingCost}`); // -> price = 100, shipping = 0
 
-let shippingCost = 9.99;
-let isOrderValid = true;
+// let price = 100;
+// let shippingCost = price > 50 ? 0 : 5;
+ 
+// console.log(`price = ${price}, shipping = ${shippingCost}`); // -> price = 100, shipping = 0
 
-let userAge = 22;
-let points = 400;
-let cartValue = 199;
-let hasPromoCode = false;
-let hasParentsApproval = false;
-let addInsurance = true;
+// let start = confirm("Start?");
+// start ? alert("Here we go!") : console.log("Aborted");
 
-/** calculate shipping cost*/
-if ((userAge > 65) || (userAge >= 21 && (hasPromoCode || cartValue > 300 || points > 500))) {
-shippingCost = 0;
-} else if (userAge < 21 && hasParentsApproval) {
-shippingCost = shippingCost - 5;
-} else if (userAge < 21) {
-isOrderValid = false;
-}
-
-/** take account of insurance */
-if (isOrderValid && addInsurance && !hasPromoCode) {
-shippingCost += INSURANCE_COST;
-}
-
-/** show message */
-if (isOrderValid) {
-console.log(shippingCost);
-} else {
-console.log("Cannot order if under 21");
-}
+let start = confirm("Start?");
+let message = start ? "Here we go!": "Aborted";
+alert(message);
