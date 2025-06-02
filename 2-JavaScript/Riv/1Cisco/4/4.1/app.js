@@ -81,12 +81,41 @@
 //     isOver = !confirm(`[${counter++}] Continue the loop?`);
 // } while (!isOver);
 
-let condition = false;
+// let condition = false;
  
-while (condition) {
-    console.log("A while loop iteration."); // never executed
+// while (condition) {
+//     console.log("A while loop iteration."); // never executed
+// }
+ 
+// do {
+//     console.log("A do ... while loop iteration."); // executed once
+// } while (condition);
+
+//4.1.4 The for loop...........................................
+// for (initialization; condition; increment) {
+//     block of code
+// }
+
+// for (let i = 0; i < 10; i++) {
+//     console.log(i);
+// }
+
+// let i = 0;
+// while (i < 10) {
+//     console.log(i);
+// i++;
+// }
+
+// let values = [10, 30, 50, 100];
+// let sum = 0;
+// for (let i = 0; i < 4; i++) {
+//     sum += values[i];
+// }
+// console.log(sum); // -> 190
+
+let values = [10, 30, 50, 100];
+let sum = 0;
+for (let i = 0; i < values.length; i++) {
+    sum += values[i];
 }
- 
-do {
-    console.log("A do ... while loop iteration."); // executed once
-} while (condition);
+console.log(sum); // -> 190
