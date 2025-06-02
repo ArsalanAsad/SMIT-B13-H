@@ -113,9 +113,33 @@
 // }
 // console.log(sum); // -> 190
 
+// let values = [10, 30, 50, 100];
+// let sum = 0;
+// for (let i = 0; i < values.length; i++) {
+//     sum += values[i];
+// }
+// console.log(sum); // -> 190
+
+//4.1.5 Loops and arrays....................
+// let names = [];
+// let isOver = false;
+// while (!isOver) {
+//     let name = prompt("Enter mother name or press cancel;");
+//     if (name != null) {
+//         names.push(name);
+//     } else {
+//         isOver = true
+//     }
+// }
+// for (let i = 0; i<names.length; i++) {
+//     console.log(names[i]);
+// }
+
 let values = [10, 30, 50, 100];
-let sum = 0;
-for (let i = 0; i < values.length; i++) {
-    sum += values[i];
+// for (let i = 0; i < values.length; i++) {
+//     console.log(values[i]);
+// }
+
+for (let i = values.length - 1; i >= 0; i--) {
+    console.log(values[i]);
 }
-console.log(sum); // -> 190
