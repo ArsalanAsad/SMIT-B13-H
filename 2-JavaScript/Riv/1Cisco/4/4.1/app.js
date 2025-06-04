@@ -179,19 +179,110 @@
 //     block of code
 // }
 
-let cities = [
-    { name: "New York", population: 18.65e6 },
-    { name: "Cairo", population: 18.82e6 },
-    { name: "Mumbai", population: 19.32e6 },
-    { name: "São Paulo", population: 20.88e6 },
-    { name: "Mexico City", population: 21.34e6 },
-    { name: "Shanghai", population: 23.48e6 },
-    { name: "Delhi", population: 25.87e6 },
-    { name: "Tokyo", population: 37.26e6 }
-];
+// let cities = [
+//     { name: "New York", population: 18.65e6 },
+//     { name: "Cairo", population: 18.82e6 },
+//     { name: "Mumbai", population: 19.32e6 },
+//     { name: "São Paulo", population: 20.88e6 },
+//     { name: "Mexico City", population: 21.34e6 },
+//     { name: "Shanghai", population: 23.48e6 },
+//     { name: "Delhi", population: 25.87e6 },
+//     { name: "Tokyo", population: 37.26e6 }
+// ];
  
-for (let city of cities) {
-    if (city.population > 20e6) {
-        console.log(`${city.name} (${city.population})`);
-    }
+// for (let city of cities) {
+//     if (city.population > 20e6) {
+//         console.log(`${city.name} (${city.population})`);
+//     }
+// }
+
+//4.1.7 for … in.......................................
+// let user = {
+//     name: "Calvin",
+//     surname: "Hart",
+//     age: 66,
+//     email: "CalvinMHart@telworm.com"
+// };
+
+// for (let key in user) {
+//     console.log(key); //
+// }
+
+// console.log(user.name); // -> Calvin
+// console.log(user[name]); // -> Calvin
+
+// for (let key in user) {
+//     console.log(`${key} -> ${user[key]}`);
+//     console.log(typeof key);
+//     console.log(typeof user)
+// };
+
+//4.1.8 The break and continue statements............................
+
+// let i = 0;
+// while (true) {
+//     console.log(i);
+//     i++;
+//     if (i >=5 ) {
+//         break;
+//     }
+//  }
+// alert(`Existed the loop with a break(${i}).`)
+
+// for (let i = 0; i < 10; i++) {
+//     if (i == 3) {
+//         continue;
+//     }
+//     console.log(i);
+// }
+
+
+// let gate = prompt("Choose gate: a, b, or c");
+// let win = false;
+ 
+// switch (gate) {
+//     case "a":
+//         alert("Gate A: empty");
+//     case "b":
+//         alert("Gate B: main prize");
+//         win = true;
+//     case "c":
+//         alert("Gate C: empty");
+//     default:
+//         alert("No gate " + String(gate));
+// }
+ 
+// if (win) {
+//     alert("Winner!");
+// }
+
+let gate = prompt("Choose gate: a, b, or c");
+let win = false;
+ 
+switch (gate) {
+    case "a":
+    case "A":
+    case 1:
+    case "1":
+        alert("Gate A: empty");
+        break;
+    case "b":
+    case "B":
+    case 2:
+    case "2":
+        alert("Gate B: main prize");
+        win = true;
+        break;
+    case "c":
+    case "C":
+    case 3:
+    case "3":
+        alert("Gate C: empty");
+        break;
+    default:
+        alert("No gate " + String(gate));
+}
+ 
+if (win) {
+    alert("Winner!");
 }
