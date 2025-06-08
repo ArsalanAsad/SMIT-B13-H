@@ -236,25 +236,42 @@
 //     console.log(i);
 // }
 
+//4.1.9 The break keyword....................................
 
 // let gate = prompt("Choose gate: a, b, or c");
 // let win = false;
  
 // switch (gate) {
 //     case "a":
-//         alert("Gate A: empty");
+//         alert("Gate A: is empty");
 //     case "b":
-//         alert("Gate B: main prize");
+//         alert("Gabe B: win");
 //         win = true;
 //     case "c":
-//         alert("Gate C: empty");
-//     default:
-//         alert("No gate " + String(gate));
-// }
- 
+//         alert("Gate C: is empty")
+// };
 // if (win) {
-//     alert("Winner!");
+//     alert("win")
+// };
+
+// let gate = prompt("Choose gate: a, b, or c");
+// let win = false;
+
+// switch (gate) {
+//     case "a":
+//         alert("Gate A: empty");
+//     case "b":
+//         alert("Main prize");
+//     win = true;
+//     case "c":
+//         alert("Gate c: empty");
+//     default:
+//         alert("No gate" + String(gate));
 // }
+// if (win) {
+//     alert("winner")
+// } 
+
 
 // let gate = prompt("Choose gate: a, b, or c");
 // let win = false;
@@ -278,31 +295,41 @@
 //     case 3:
 //     case "3":
 //         alert("Gate C: empty");
-//         break;
-//     default:
-//         alert("No gate " + String(gate));
 // }
- 
 // if (win) {
 //     alert("Winner!");
+// };
+
+// let gate = prompt ("choose gae: a, b, or c")
+// let win = false
+// switch(gate) {
+//     case "a": {
+//         let message = "Gate A";
+//         console.log(message);
+//         break;
+//     }
+//     case "b": {
+//         let message = "Gate B";
+//         console.log(message);
+//         break
+//     }
+//     case "c": {
+//         let message = "Gate C";
+//         console.log(message);
+//         break;
+//     }
+//     default:
+//         alert("No gate" + String(gate));
+// }
+// if (win){
+//     alert("Winner")
 // }
 
-//4.1.9 The break keyword.........................................
-let gate = prompt("Choose gate: a, b, or c");
-let win = false;
- 
-switch (gate) {
-    case "a":
-        alert("Gate A: empty");
-    case "b":
-        alert("Gate B: main prize");
-        win = true;
-    case "c":
-        alert("Gate C: empty");
-    default:
-        alert("No gate " + String(gate));
+//4.1.11 SECTION PRACTICE.................................................................
+
+//Exercise 1: Write a piece of code that will write numbers from 100 to 0 to the console, but in steps of 10; so 100, 90, 80... etc.
+
+for (let i = 100; i >= 0; i -= 10) {
+    console.log(i);
 }
- 
-if (win) {
-    alert("Winner!");
-}
+
