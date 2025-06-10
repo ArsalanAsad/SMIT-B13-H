@@ -387,31 +387,63 @@
 
 // Lost in Translation (7.7)
 
-let movies = [];
+// let movies = [];
 
-while (true) {
-    let title = prompt("Enter movie name");
-    let rating = prompt("Enter movie rating('imbd')");
+// while (true) {
+//     let title = prompt("Enter movie name");
+//     let rating = prompt("Enter movie rating('imbd')");
 
-    if (title === null || rating === null) {
-        break;
-    } else {
-        movies.push({
-            title: title,
-            rating: Number(rating)
-        });
-    }
-    console.log("All with rating under 7;");
-    for (let movie of movies) {
-        if (movie.rating < 7) {
-            console.log(`${movie.title} (${movie.rating})`);
-        }
-    }
+//     if (title === null || rating === null) {
+//         break;
+//     } else {
+//         movies.push({
+//             title: title,
+//             rating: Number(rating)
+//         });
+//     }
+//     console.log("All with rating under 7;");
+//     for (let movie of movies) {
+//         if (movie.rating < 7) {
+//             console.log(`${movie.title} (${movie.rating})`);
+//         }
+//     }
 
-    console.log("All movies with rating 7 or higher;");
-    for (let movie of movies) {
-        if(movie.rating >=7) {
-            console.log(`${movie.title} (${movie.rating})`);
-        }
-    }
+//     console.log("All movies with rating 7 or higher;");
+//     for (let movie of movies) {
+//         if(movie.rating >=7) {
+//             console.log(`${movie.title} (${movie.rating})`);
+//         }
+//     }
+// };
+
+// Exercise 5: The contents of the object describing the position of the vessel named "Mareno" are written on the console:
+
+
+// LATITUDE -> 40.07288 
+// LONGITUDE -> 154.48535 
+// COURSE -> 285.6 
+// SPEED -> 14.0 
+// IMO -> 9175717 
+// NAME -> MARENO
+
+// The code presented below is used for this. Complete the program by declaring the missing object in place of the three dots:
+
+
+// let vessel = ... 
+ 
+// for( let key in vessel) { 
+//     console.log(`${key} -> ${vessel[key]}`); 
+// }
+
+let vessel = {
+    LATITUDE: 40.07288,
+    LONGITUDE: 154.48535,
+    COURSE: 285.6,
+    SPEED: 14.0,
+    IMO: 9175717,
+    NAME: "MARENO"
 };
+
+for (let key in vessel) {
+    console.log(`${key} -> ${vessel[key]}`);
+}
