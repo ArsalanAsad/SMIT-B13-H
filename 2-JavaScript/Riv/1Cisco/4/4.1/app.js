@@ -486,7 +486,52 @@
 //     alert(result);
 // }
 
-while (true) {
+// while (true) {
+//     let firstNumber = prompt("Enter first number (or Q to quit):");
+//     if (firstNumber === "Q") break;
+
+//     let secondNumber = prompt("Enter second number (or Q to quit):");
+//     if (secondNumber === "Q") break;
+
+//     let operand = prompt("Enter operand (+, -, * or /) (or Q to quit):");
+//     if (operand === "Q") break;
+
+//     let result;
+
+//     // Convert to numbers
+//     firstNumber = Number(firstNumber);
+//     secondNumber = Number(secondNumber);
+
+//     // Check if inputs are valid numbers
+//     if (!Number.isNaN(firstNumber) && !Number.isNaN(secondNumber)) {
+//         switch (operand) {
+//             case "+":
+//                 result = firstNumber + secondNumber;
+//                 break;
+//             case "-":
+//                 result = firstNumber - secondNumber;
+//                 break;
+//             case "*":
+//                 result = firstNumber * secondNumber;
+//                 break;
+//             case "/":
+//                 if (secondNumber === 0) {
+//                     result = "Error: Division by zero";
+//                 } else {
+//                     result = firstNumber / secondNumber;
+//                 }
+//                 break;
+//             default:
+//                 result = "Error: Unknown operand";
+//         }
+//     } else {
+//         result = "Error: One or both inputs are not valid numbers";
+//     }
+
+//     alert(result);
+// }
+
+le (true) {
     let firstNumber = prompt("Enter first number (or Q to quit):");
     if (firstNumber === "Q") break;
 
