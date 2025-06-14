@@ -531,47 +531,81 @@
 //     alert(result);
 // }
 
-le (true) {
-    let firstNumber = prompt("Enter first number (or Q to quit):");
-    if (firstNumber === "Q") break;
+//4.1.12  LAB  Loops...............................................
 
-    let secondNumber = prompt("Enter second number (or Q to quit):");
-    if (secondNumber === "Q") break;
+// We can improve our contact list program a bit by using loops. You can now try to display not only the first or last contact, but all contacts in the list, regardless of their number.
 
-    let operand = prompt("Enter operand (+, -, * or /) (or Q to quit):");
-    if (operand === "Q") break;
+// Additionally, try to enclose the whole program in a loop so that the user is repeatedly asked what they want to do. The user can choose to:
 
-    let result;
+// display the first contact (first)
+// display the last contact (last)
+// display all contacts (all)
+// add a new contact (new)
+// exit the program (quit)
+// After executing the selected action, the program will give the opportunity to choose again. The program should end the actions only after the user gives a specified command, for example quit.
+// let contacts = [{
+// name: "Maxwell Wright",
+// phone: "(0191) 719 6495",
+// email: "Curabitur.egestas.nunc@nonummyac.co.uk"
+// }, {
+// name: "Raja Villarreal",
+// phone: "0866 398 2895",
+// email: "posuere.vulputate@sed.com"
+// }, {
+// name: "Helen Richards",
+// phone: "0800 1111",
+// email: "libero@convallis.edu"
+// }];
 
-    // Convert to numbers
-    firstNumber = Number(firstNumber);
-    secondNumber = Number(secondNumber);
+let contacts = [
+  {
+    name: "Maxwell Wright",
+    phone: "(0191) 719 6495",
+    email: "Curabitur.egestas.nunc@nonummyac.co.uk"
+  },
+  {
+    name: "Raja Villarreal",
+    phone: "0866 398 2895",
+    email: "posuere.vulputate@sed.com"
+  },
+  {
+    name: "Helen Richards",
+    phone: "0800 1111",
+    email: "libero@convallis.edu"
+  }
+];
 
-    // Check if inputs are valid numbers
-    if (!Number.isNaN(firstNumber) && !Number.isNaN(secondNumber)) {
-        switch (operand) {
-            case "+":
-                result = firstNumber + secondNumber;
-                break;
-            case "-":
-                result = firstNumber - secondNumber;
-                break;
-            case "*":
-                result = firstNumber * secondNumber;
-                break;
-            case "/":
-                if (secondNumber === 0) {
-                    result = "Error: Division by zero";
-                } else {
-                    result = firstNumber / secondNumber;
-                }
-                break;
-            default:
-                result = "Error: Unknown operand";
-        }
-    } else {
-        result = "Error: One or both inputs are not valid numbers";
-    }
+function displayContact(contact) {
+  console.log(`Name: ${contact.name}`);
+  console.log(`Phone: ${contact.phone}`);
+  console.log(`Email: ${contact.email}`);
+  console.log('--------------------------');
+}
 
-    alert(result);
+while (true) {
+  let action = prompt(
+    "What would you like to do?\nOptions: first, last, all, new, quit"
+  ).toLowerCase();
+
+  if (action === "first") {
+    console.log("First contact:");
+    displayContact(contacts[0]);
+  } else if (action === "last") {
+    console.log("Last contact:");
+    displayContact(contacts[contacts.length - 1]);
+  } else if (action === "all") {
+    console.log("All contacts:");
+    contacts.forEach(displayContact);
+  } else if (action === "new") {
+    let name = prompt("Enter name:");
+    let phone = prompt("Enter phone number:");
+    let email = prompt("Enter email:");
+    contacts.push({ name, phone, email });
+    console.log("New contact added.");
+  } else if (action === "quit") {
+    console.log("Exiting program. Goodbye!");
+    break;
+  } else {
+    console.log("Invalid option. Please try again.");
+  }
 }
