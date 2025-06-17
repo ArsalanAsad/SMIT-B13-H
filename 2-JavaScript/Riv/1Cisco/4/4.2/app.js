@@ -88,7 +88,7 @@
 // radio_button_unchecked
 // nothing
 
-// radio_button_unchecked
+// radio_button_unchecked // RIGHT ANSWER
 // 100
 
 // radio_button_unchecked
@@ -96,3 +96,49 @@
 
 // radio_button_unchecked
 // false
+
+let keepGoing = true;
+
+while (keepGoing) {
+    let num1 = prompt("Enter the first number (or type 'exit' to quit):");
+    if (num1.toLowerCase() === 'exit') break;
+
+    let num2 = prompt("Enter the second number (or type 'exit' to quit):");
+    if (num2.toLowerCase() === 'exit') break;
+
+    let operator = prompt("Enter operator (+, -, *, /) (or type 'exit' to quit):");
+    if (operator.toLowerCase() === 'exit') break;
+
+    num1 = parseFloat(num1);
+    num2 = parseFloat(num2);
+
+    if (isNaN(num1) || isNaN(num2)) {
+        alert("Invalid number. Try again.");
+        continue;
+    }
+
+    let result;
+    switch (operator) {
+        case '+':
+            result = num1 + num2;
+            break;
+        case '-':
+            result = num1 - num2;
+            break;
+        case '*':
+            result = num1 * num2;
+            break;
+        case '/':
+            if (num2 === 0) {
+                alert("Error: Division by zero");
+                continue;
+            }
+            result = num1 / num2;
+            break;
+        default:
+            alert("Invalid operator. Try again.");
+            continue;
+    }
+
+    alert(`Result: ${result}`);
+}
