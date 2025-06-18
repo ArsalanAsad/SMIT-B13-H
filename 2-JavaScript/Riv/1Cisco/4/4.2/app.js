@@ -142,3 +142,227 @@ while (keepGoing) {
 
     alert(`Result: ${result}`);
 }
+
+// Question 6
+// Review the following code:
+
+
+// if (counter <= 10) {
+//     if (counter >= 10) {
+//      console.log(1);
+//     }
+// }
+
+// We can replace it using:
+
+
+// radio_button_unchecked
+// if (counter >= 10) console.log(1);
+
+// radio_button_unchecked
+// if (false) console.log(1);
+
+// radio_button_unchecked
+// if (counter == 10) console.log(1); //RIGHT ANSWER
+
+// radio_button_unchecked
+// if (true) console.log(1);
+
+// Question 7
+// Review the following code snippet:
+
+
+// if (counter <= 10 && show === false) {
+//     console.log("test");
+// }
+
+// What values can the counter and show variables have so that the console displays "test" as a result of code execution?
+
+
+// radio_button_unchecked
+// counter: 9, show: true
+
+// radio_button_unchecked
+// counter: 10, show: true
+
+// radio_button_unchecked
+// counter: 10, show: false//RIGHT ANSWER
+
+// radio_button_unchecked
+// counter: 11, show: false
+
+// /The switch statement:
+
+
+// radio_button_unchecked
+// is a conditional statement that allows different actions to be taken depending on the value stored in the indicated variable.
+//RIGHT ANSWER
+// radio_button_unchecked
+// allows you to change the program mode to debug mode.
+
+// radio_button_checked
+// is a conditional statement that works identically to the if statement.
+
+// radio_button_unchecked
+// is not present in the JavaScript language.
+
+// Question 9
+// Analyze the code below:
+
+
+// if (counter === 10) {
+//     console.log("abc");
+// }
+
+// How can we write the same condition using the switch statement?
+
+
+// radio_button_unchecked
+// switch(counter) 
+//   case 10:
+//      console.log("abc");
+
+// radio_button_unchecked
+// switch(counter) {
+//   case 10:
+//      console.log("abc")//RIGHT ANSWER
+// };
+
+// radio_button_unchecked
+// case(counter) {
+//   switch 10:
+//      console.log("abc")
+// };
+
+// radio_button_unchecked
+// switch(counter) {
+//   case ? 10 :
+//      console.log("abc")
+// };
+
+// Question 10
+// Which sequence of if ... else statements is incorrect?
+
+
+// radio_button_unchecked
+// if ... else if ... else if...
+
+// radio_button_unchecked
+// if ... else if ...
+
+// radio_button_checked
+// if ... else ... else if ... // RIGHT ANSWER
+
+// radio_button_unchecked
+// if ... else ...
+
+// Question 11
+// Which of the following is not a loop instruction in JavaScript?
+
+
+// radio_button_unchecked
+// do ... while
+
+// radio_button_checked
+// if ... else // RIGHT ANSWER
+
+// radio_button_unchecked
+// for ... of
+
+// radio_button_unchecked
+// for ... in
+
+// Question 12
+// Which of the following loop instructions is intended only to loop through all the keys of the indicated object?
+
+
+// radio_button_unchecked
+// do ... while
+
+// radio_button_unchecked
+// for ... of
+
+// radio_button_unchecked
+// if ... else
+
+// radio_button_unchecked
+// for ... in //RIGHT ANSWER
+
+// Question 13
+// If we want to display all the elements of the days array in reverse order (starting from the last element) then we can do this using the statement:
+
+
+// radio_button_unchecked
+// for(let i = days.length; i > 0; i--)
+//      console.log(days[i]);
+
+// radio_button_unchecked
+// for(let i = days.length - 1; i >= 0; i--) //RIGHT ANSWER
+//      console.log(days[i]);
+
+// radio_button_unchecked
+// for(let i = days.length - 1; i > 0; i--)
+//      console.log(days[i]);
+
+// radio_button_unchecked
+// for(let i = days.length; i > 0; i--)
+//      console.log(i);
+
+// Question 14
+// Analyze the following code:
+
+
+// let a = 10;
+// do {
+//     console.log(a--);
+// } while (a > 3);
+
+// Which statement can replace the do ... while from the example above?
+
+
+// radio_button_unchecked
+// while (a >= 3)
+//      console.log(a--);
+
+// radio_button_unchecked
+// while (a > 3)
+//      console.log(a--);
+
+// radio_button_unchecked
+// while (a > 4)
+//      console.log(--a);
+
+// radio_button_unchecked
+// while (a > 2)
+//      console.log(--a);
+
+// Question 14
+// Analyze the following code:
+
+
+// let a = 10;
+// do {
+//     console.log(a--);
+// } while (a > 3);
+
+// Which statement can replace the do ... while from the example above?
+
+
+// radio_button_unchecked
+// while (a >= 3)
+//      console.log(a--);
+
+// radio_button_checked
+// while (a > 3)
+//      console.log(a--); //RIGHT ANSWER
+
+// radio_button_unchecked
+// while (a > 4)
+//      console.log(--a);
+
+// radio_button_unchecked
+// while (a > 2)
+//      console.log(--a);
+
+
+
