@@ -360,9 +360,149 @@ while (keepGoing) {
 // while (a > 4)
 //      console.log(--a);
 
-// radio_button_unchecked
+// radi/o_button_unchecked
 // while (a > 2)
 //      console.log(--a);
 
+// Question 15
+// Analyze the following code:
 
 
+// for (let x = 10; x > 1; x -= 2)
+// console.log("hello");
+
+// How many times will "hello" be displayed in the console as a result of its execution?
+
+
+// radio_button_unchecked
+// 10
+
+// radio_button_unchecked
+// 5
+
+// radio_button_unchecked
+// 9
+
+// radio_button_checked
+// 4 //RIGHT ANSWER
+
+// Question 16
+// We store an array of animal names in the animals variable (e.g. let animals = ["dog", "cat", "hamster", "rabbit"];).
+
+// Which of the following statements will display exactly two names from the array?
+
+
+// radio_button_checked
+// for (let i = 0; i < animals.length; i+=2)
+//      console.log(animals[i]); //RGIHT ANSWER
+
+// radio_button_unchecked
+// for (let n in animals)
+//      console.log(n);
+
+// radio_button_unchecked
+// for (let n of animals)
+//      console.log(n);
+
+// radio_button_unchecked
+// for (let i =3 ; i < animals.length; i++)
+//      console.log(animals[i]);
+
+// Question 17
+// Examine the following code:
+
+
+// for (let a = 5; a > 1; a--) {
+//     console.log(a);
+// }
+// ;
+
+// Which statement can replace the for from the example above?
+
+
+// radio_button_unchecked
+// let a = 5; while (a > 1)
+//      console.log(a--);//RIGHT ANSWER
+
+// radio_button_unchecked
+// let a = 6; while (a >= 1)
+//      console.log(a--);
+
+// radio_button_unchecked
+// let a = 1; while (a < 5)
+//      console.log(a++);
+
+// radio_button_unchecked
+// let a = 5; while (a > 1)
+//      console.log(a++);
+
+
+// Question 18
+// Examine the following code:
+
+
+// for (let a = 4; a < 4; a++) {
+//     console.log("test");
+// }
+
+// How many times will "test" be displayed in the console as a result of its execution?
+
+
+// radio_button_unchecked
+// 4
+
+// radio_button_unchecked
+// 1
+
+// radio_button_checked
+// 3
+
+// radio_button_unchecked
+// It will not be displayed at all. // Right Answer
+
+
+// Question 19
+// Examine the following code:
+
+
+// let car = {make: "Citroen", model: "DS"};
+// for (let f in car)
+// console.log(f);
+
+// What will appear on the console as a result?
+
+
+// radio_button_unchecked
+// "car"
+
+// radio_button_unchecked
+// "Citroen" "DS"
+
+// radio_button_checked
+// "make""model" //RIGHT ANSWER
+
+// radio_button_unchecked
+// "make: Citroen" "model: DS"
+
+// Question 20
+// Examine the following code:
+
+
+// let steps = [3, 2, 1];
+// for (let n of steps)
+// console.log(n);
+
+// What will appear on the console as a result?
+
+
+// radio_button_unchecked
+// 0 1 2
+
+// radio_button_unchecked
+// 3 2 1
+
+// radio_button_unchecked
+// 1 2 3
+
+// radio_button_unchecked
+// "[3, 2, 1]"
